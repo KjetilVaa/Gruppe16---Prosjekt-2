@@ -1,6 +1,48 @@
 body {
     display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    grid-template-rows: 10vh 90vh auto;
     padding: 0;
     margin: 0;
+    font-family: "Century Gothic";
+}
+.backgroudnImg {
+    grid-column: 1/4;
+    grid-row: 1/3;
 }
 
+.header {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    z-index: 10;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    transition: 1s;
+    background-color: rgba(0,0,0,0);
+}
+.header div {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.header a {
+    cursor: pointer;
+    margin: 30px;
+}
+.header a:hover {
+    color: red;
+}
+
+.header:hover {
+    background-color: #fff;
+    box-shadow: 0 5px 8px #888;
+}
+
+.contentContainer {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 1px solid black;
+}
