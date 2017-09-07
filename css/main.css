@@ -137,19 +137,19 @@ body {
     font-weight: bold;
 }
 #zermatt {
-    background: url("../img/zermatt.jpg");
+    background: url("../img/zermatt.jpg") center;
     background-size: cover;
 }
 #patagonia {
-    background: url("../img/patagonia.jpg");
+    background: url("../img/patagonia_icon.jpg") center;
     background-size: cover;
 }
 #whistler {
-    background: url("../img/whistler.jpg");
+    background: url("../img/whistler_icon.jpg") center;
     background-size: cover;
 }
 #lech {
-    background: url("../img/lech.jpg") center;
+    background: url("../img/lech_icon.png") center;
     background-size: cover;
 }
 
