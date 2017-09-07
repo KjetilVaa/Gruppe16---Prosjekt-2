@@ -1,26 +1,37 @@
 body {
     display: grid;
     grid-template-columns: 10vw auto 10vw;
-    grid-template-rows: 10vh 90vh auto;
+    grid-template-rows: 10vh 90vh 90vh auto 15vh;
     padding: 0;
     margin: 0;
     font-family: "Century Gothic";
 }
 .backgroudnImg {
     grid-column: 1/4;
-    grid-row: 1/3;
+    grid-row: 1/2;
+    background: url("../img/matterhorn.jpg") center;
+    background-size: cover;
 }
 
 .header {
-    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: inline-flex;
     display: -webkit-flex;
     align-items: center;
     z-index: 10;
     grid-column: 1/4;
     grid-row: 1/2;
     transition: 1s;
-    background-color: rgba(0,0,0,0);
+    background-size: cover;
 }
+.headerPicture {
+    background: url("../img/matterhorn.JPG") 0 -100px;
+    background-size: 100%;
+    box-shadow: 0 5px 8px #000;
+}
+
 .header div {
     display: flex;
     display: -webkit-flex;
@@ -38,16 +49,28 @@ body {
     color: red;
 }
 
-.header:hover {
-    background-color: #fff;
-    box-shadow: 0 5px 8px #888;
-}
-.header:hover a {
-    color: #000;
+.container {
+    grid-column: 1/4;
 }
 
-.contentContainer {
-    grid-column: 2/3;
+.firstContainer {
     grid-row: 2/3;
-    border: 1px solid black;
+
 }
+.secondContainer {
+    grid-row: 3/4;
+    background-color: #ecf0f1;
+    background-size: cover;
+}
+
+.content {
+
+}
+
+.footer {
+    z-index: 11;
+    grid-column: 1/4;
+    grid-row: 5/6;
+    background-color: #fff;
+}
+
